@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://tinycld.org">
-    <img src="./profile/hero.svg" alt="TinyCld — your cloud, your rules. A self-hosted productivity suite — mail, calendar, drive, docs. And the platform you build the next app on top of." width="100%" />
+    <img src="https://raw.githubusercontent.com/tinycld/.github/main/profile/hero.svg" alt="TinyCld — your cloud, your rules. A self-hosted productivity suite — mail, calendar, drive, docs. And the platform you build the next app on top of." width="100%" />
 </a>
 
 <br/>

@@ -1,158 +1,169 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" role="img" aria-labelledby="tinycld-hero-title">
-    <title id="tinycld-hero-title">TinyCld — your cloud, your rules</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="1280" height="440" role="img" aria-label="TinyCld — your cloud, your rules">
 
     <defs>
-        <!-- Brand palette: pulled from the cloud mascot -->
         <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%"   stop-color="#0a131e"/>
-            <stop offset="60%"  stop-color="#0c1623"/>
+            <stop offset="0%" stop-color="#0a131e"/>
+            <stop offset="60%" stop-color="#0c1623"/>
             <stop offset="100%" stop-color="#0f1d2e"/>
         </linearGradient>
 
         <radialGradient id="glow-coral" cx="80%" cy="20%" r="55%">
-            <stop offset="0%"   stop-color="#eb7d5e" stop-opacity="0.32"/>
-            <stop offset="60%"  stop-color="#eb7d5e" stop-opacity="0.05"/>
+            <stop offset="0%" stop-color="#eb7d5e" stop-opacity="0.32"/>
+            <stop offset="60%" stop-color="#eb7d5e" stop-opacity="0.05"/>
             <stop offset="100%" stop-color="#eb7d5e" stop-opacity="0"/>
         </radialGradient>
 
         <radialGradient id="glow-blue" cx="15%" cy="85%" r="60%">
-            <stop offset="0%"   stop-color="#6da6db" stop-opacity="0.28"/>
-            <stop offset="60%"  stop-color="#6da6db" stop-opacity="0.04"/>
+            <stop offset="0%" stop-color="#6da6db" stop-opacity="0.28"/>
+            <stop offset="60%" stop-color="#6da6db" stop-opacity="0.04"/>
             <stop offset="100%" stop-color="#6da6db" stop-opacity="0"/>
         </radialGradient>
 
         <linearGradient id="accent-text" x1="0" y1="0" x2="1" y2="0.4">
-            <stop offset="0%"   stop-color="#80b1dc"/>
-            <stop offset="35%"  stop-color="#6da6db"/>
-            <stop offset="65%"  stop-color="#f4a48d"/>
+            <stop offset="0%" stop-color="#80b1dc"/>
+            <stop offset="35%" stop-color="#6da6db"/>
+            <stop offset="65%" stop-color="#f4a48d"/>
             <stop offset="100%" stop-color="#eb7d5e"/>
         </linearGradient>
 
         <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%"   stop-color="#eb7d5e" stop-opacity="0"/>
-            <stop offset="20%"  stop-color="#eb7d5e" stop-opacity="0.6"/>
-            <stop offset="50%"  stop-color="#6da6db" stop-opacity="0.6"/>
-            <stop offset="80%"  stop-color="#80b1dc" stop-opacity="0.6"/>
+            <stop offset="0%" stop-color="#eb7d5e" stop-opacity="0"/>
+            <stop offset="20%" stop-color="#eb7d5e" stop-opacity="0.6"/>
+            <stop offset="50%" stop-color="#6da6db" stop-opacity="0.6"/>
+            <stop offset="80%" stop-color="#80b1dc" stop-opacity="0.6"/>
             <stop offset="100%" stop-color="#80b1dc" stop-opacity="0"/>
         </linearGradient>
 
-        <pattern id="grid" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
-            <path d="M48 0 H0 V48" fill="none" stroke="#1e3450" stroke-width="0.6" opacity="0.55"/>
-        </pattern>
-
-        <mask id="grid-fade">
-            <radialGradient id="grid-fade-grad" cx="50%" cy="50%" r="70%">
-                <stop offset="0%"  stop-color="#fff" stop-opacity="0.9"/>
-                <stop offset="70%" stop-color="#fff" stop-opacity="0.25"/>
-                <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
-            </radialGradient>
-            <rect width="1280" height="440" fill="url(#grid-fade-grad)"/>
-        </mask>
-
-        <filter id="soft-shadow" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="14"/>
-        </filter>
-
-        <!-- Pill chip used for the package constellation -->
-        <symbol id="chip" overflow="visible">
-            <rect x="-32" y="-14" width="64" height="28" rx="14"
-                  fill="#152233" stroke="#2a4565" stroke-width="1"/>
-        </symbol>
+        <radialGradient id="grid-fade-grad" cx="50%" cy="50%" r="70%">
+            <stop offset="0%" stop-color="#1e3450" stop-opacity="0.55"/>
+            <stop offset="70%" stop-color="#1e3450" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#1e3450" stop-opacity="0"/>
+        </radialGradient>
     </defs>
 
-    <!-- Background -->
+    <!-- Background layers -->
     <rect width="1280" height="440" fill="url(#ink)"/>
-    <rect width="1280" height="440" fill="url(#grid)" mask="url(#grid-fade)"/>
+
+    <!-- Grid: drawn as discrete lines with a soft fill overlay to fake the radial fade -->
+    <g stroke="#1e3450" stroke-width="0.6" opacity="0.4">
+        <line x1="0" y1="48" x2="1280" y2="48"/>
+        <line x1="0" y1="96" x2="1280" y2="96"/>
+        <line x1="0" y1="144" x2="1280" y2="144"/>
+        <line x1="0" y1="192" x2="1280" y2="192"/>
+        <line x1="0" y1="240" x2="1280" y2="240"/>
+        <line x1="0" y1="288" x2="1280" y2="288"/>
+        <line x1="0" y1="336" x2="1280" y2="336"/>
+        <line x1="0" y1="384" x2="1280" y2="384"/>
+        <line x1="48" y1="0" x2="48" y2="440"/>
+        <line x1="96" y1="0" x2="96" y2="440"/>
+        <line x1="144" y1="0" x2="144" y2="440"/>
+        <line x1="192" y1="0" x2="192" y2="440"/>
+        <line x1="240" y1="0" x2="240" y2="440"/>
+        <line x1="288" y1="0" x2="288" y2="440"/>
+        <line x1="336" y1="0" x2="336" y2="440"/>
+        <line x1="384" y1="0" x2="384" y2="440"/>
+        <line x1="432" y1="0" x2="432" y2="440"/>
+        <line x1="480" y1="0" x2="480" y2="440"/>
+        <line x1="528" y1="0" x2="528" y2="440"/>
+        <line x1="576" y1="0" x2="576" y2="440"/>
+        <line x1="624" y1="0" x2="624" y2="440"/>
+        <line x1="672" y1="0" x2="672" y2="440"/>
+        <line x1="720" y1="0" x2="720" y2="440"/>
+        <line x1="768" y1="0" x2="768" y2="440"/>
+        <line x1="816" y1="0" x2="816" y2="440"/>
+        <line x1="864" y1="0" x2="864" y2="440"/>
+        <line x1="912" y1="0" x2="912" y2="440"/>
+        <line x1="960" y1="0" x2="960" y2="440"/>
+        <line x1="1008" y1="0" x2="1008" y2="440"/>
+        <line x1="1056" y1="0" x2="1056" y2="440"/>
+        <line x1="1104" y1="0" x2="1104" y2="440"/>
+        <line x1="1152" y1="0" x2="1152" y2="440"/>
+        <line x1="1200" y1="0" x2="1200" y2="440"/>
+        <line x1="1248" y1="0" x2="1248" y2="440"/>
+    </g>
+
+    <!-- Glow overlays -->
     <rect width="1280" height="440" fill="url(#glow-coral)"/>
     <rect width="1280" height="440" fill="url(#glow-blue)"/>
 
     <!-- Top eyebrow rail -->
-    <g transform="translate(72 64)">
-        <line x1="0" y1="0" x2="44" y2="0" stroke="#eb7d5e" stroke-width="2" stroke-linecap="round"/>
-        <text x="58" y="5"
-              font-family="'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace"
-              font-size="13" letter-spacing="0.32em" fill="#80b1dc" font-weight="600">
-            T I N Y C L D · O R G
-        </text>
-    </g>
+    <line x1="72" y1="64" x2="116" y2="64" stroke="#eb7d5e" stroke-width="2" stroke-linecap="round"/>
+    <text x="130" y="69" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="13" letter-spacing="4" fill="#80b1dc" font-weight="700">TINYCLD · ORG</text>
 
     <!-- Wordmark -->
-    <g transform="translate(72 168)">
-        <text font-family="'Bricolage Grotesque', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif"
-              font-size="116" font-weight="800" letter-spacing="-0.045em" fill="#e8edf3">
-            Your cloud,
-        </text>
-        <text y="116"
-              font-family="'Bricolage Grotesque', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif"
-              font-size="116" font-weight="800" letter-spacing="-0.045em"
-              fill="url(#accent-text)">
-            your rules.
-        </text>
-    </g>
+    <text x="72" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+          font-size="104" font-weight="800" letter-spacing="-4" fill="#e8edf3">Your cloud,</text>
+    <text x="72" y="304" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+          font-size="104" font-weight="800" letter-spacing="-4" fill="url(#accent-text)">your rules.</text>
 
     <!-- Subtitle -->
-    <g transform="translate(72 360)">
-        <text font-family="'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif"
-              font-size="20" fill="#8fa3bb" font-weight="400">
-            A self-hosted productivity suite — mail, calendar, drive, docs.
-        </text>
-        <text y="28"
-              font-family="'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif"
-              font-size="20" fill="#8fa3bb" font-weight="400">
-            And the platform you build the next app on top of.
-        </text>
-    </g>
+    <text x="72" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+          font-size="19" fill="#8fa3bb">A self-hosted productivity suite — mail, calendar, drive, docs.</text>
+    <text x="72" y="390" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+          font-size="19" fill="#8fa3bb">And the platform you build the next app on top of.</text>
 
     <!-- Decorative rule along the bottom -->
-    <rect x="72" y="424" width="1136" height="1" fill="url(#rule)"/>
+    <rect x="72" y="422" width="1136" height="1" fill="url(#rule)"/>
 
-    <!-- Right column: cloud + orbiting icons -->
+    <!-- Right column: cloud + orbiting chips -->
     <g transform="translate(960 220)">
-        <!-- Soft shadow halo behind cloud -->
-        <ellipse cx="0" cy="20" rx="170" ry="40" fill="#6da6db" opacity="0.2" filter="url(#soft-shadow)"/>
 
-        <!-- Cloud silhouette (simplified from /logo.svg) -->
+        <!-- Orbit hints (dashed ellipses) -->
+        <ellipse cx="0" cy="0" rx="225" ry="190" fill="none" stroke="#1e3450" stroke-width="1" stroke-dasharray="2 6" opacity="0.5"/>
+        <ellipse cx="0" cy="0" rx="170" ry="140" fill="none" stroke="#1e3450" stroke-width="1" stroke-dasharray="2 6" opacity="0.5"/>
+
+        <!-- Soft halo behind cloud (stacked translucent ellipses since <filter> is sanitized away) -->
+        <ellipse cx="0" cy="20" rx="190" ry="48" fill="#6da6db" opacity="0.06"/>
+        <ellipse cx="0" cy="20" rx="160" ry="40" fill="#6da6db" opacity="0.08"/>
+        <ellipse cx="0" cy="20" rx="130" ry="32" fill="#6da6db" opacity="0.10"/>
+
+        <!-- Cloud silhouette (lifted from /logo.svg, scaled to ~210px wide) -->
         <g transform="scale(0.072) translate(-1500 -1500)">
-            <path d="M458.967,1692.3c-130.489,29.678 -247.881,104.017 -314.311,205.55c-66.428,101.534 -79.131,229.41 -27.698,337.252c70.609,148.046 253.772,242.396 438.569,253.411c184.796,11.008 367.903,-51.551 517.605,-145.87c138.995,115.813 329.674,164.313 519.644,134.666c189.97,-29.639 360.204,-141.833 443.595,-292.347c90.636,40.063 164.73,84.486 265.444,97.291c162.869,20.714 336.51,-19.184 460.547,-112.753c124.029,-93.57 193.762,-240.615 173.135,-381.809c-20.626,-141.202 -134.421,-271.05 -289.019,-319.96c169.895,-138.994 280.496,-331.122 236.648,-529.753c-43.848,-198.633 -210.723,-373.677 -427.88,-448.819c-217.157,-75.143 -477.649,-47.982 -667.911,69.641c-22.724,-60.965 -72.289,-88.03 -140.043,-113.938c-67.754,-25.907 -144.466,-30.762 -217.961,-22.639c-178.569,19.737 -343.063,118.254 -427.186,255.855c-84.124,137.599 -85.622,310.592 -3.895,449.267c-173.135,-39.509 -358.965,3.272 -473.024,122.606c-114.059,119.337 -143.782,302.802 -66.259,442.349Z"
-                  fill="#80b1dc"/>
-            <path d="M2935.5,1787.69c-5.401,-36.996 -17.346,-73.164 -34.606,-107.345c-6.49,54.335 -20.785,107.826 -43.848,158.809c-63.505,140.351 -195.726,259.207 -361.048,306.982c-165.33,47.774 -361.126,18.324 -488.428,-84.628c-88.626,140.831 -253.608,243.886 -436.103,272.406c-182.496,28.511 -378.774,-18.104 -518.809,-123.217c-182.938,78.36 -390.983,158.517 -584.009,101.021c-160.179,-47.711 -272.404,-195.182 -259.682,-341.233c9.199,-105.618 83.287,-203.28 186.527,-259.381c-104.351,36.712 -195.423,102.054 -250.835,186.745c-66.428,101.534 -79.132,229.41 -27.698,337.252c70.609,148.046 253.772,242.396 438.569,253.411c184.796,11.008 367.903,-51.551 517.605,-145.87c138.995,115.813 329.674,164.313 519.644,134.666c189.97,-29.639 360.204,-141.833 443.595,-292.347c90.636,40.063 164.73,84.478 265.444,97.291c162.869,20.714 336.51,-19.184 460.547,-112.753c124.029,-93.578 193.762,-240.615 173.135,-381.809Z"
-                  fill="#6da6db"/>
+            <path fill="#80b1dc" d="M458.967,1692.3c-130.489,29.678 -247.881,104.017 -314.311,205.55c-66.428,101.534 -79.131,229.41 -27.698,337.252c70.609,148.046 253.772,242.396 438.569,253.411c184.796,11.008 367.903,-51.551 517.605,-145.87c138.995,115.813 329.674,164.313 519.644,134.666c189.97,-29.639 360.204,-141.833 443.595,-292.347c90.636,40.063 164.73,84.486 265.444,97.291c162.869,20.714 336.51,-19.184 460.547,-112.753c124.029,-93.57 193.762,-240.615 173.135,-381.809c-20.626,-141.202 -134.421,-271.05 -289.019,-319.96c169.895,-138.994 280.496,-331.122 236.648,-529.753c-43.848,-198.633 -210.723,-373.677 -427.88,-448.819c-217.157,-75.143 -477.649,-47.982 -667.911,69.641c-22.724,-60.965 -72.289,-88.03 -140.043,-113.938c-67.754,-25.907 -144.466,-30.762 -217.961,-22.639c-178.569,19.737 -343.063,118.254 -427.186,255.855c-84.124,137.599 -85.622,310.592 -3.895,449.267c-173.135,-39.509 -358.965,3.272 -473.024,122.606c-114.059,119.337 -143.782,302.802 -66.259,442.349Z"/>
+            <path fill="#6da6db" d="M2935.5,1787.69c-5.401,-36.996 -17.346,-73.164 -34.606,-107.345c-6.49,54.335 -20.785,107.826 -43.848,158.809c-63.505,140.351 -195.726,259.207 -361.048,306.982c-165.33,47.774 -361.126,18.324 -488.428,-84.628c-88.626,140.831 -253.608,243.886 -436.103,272.406c-182.496,28.511 -378.774,-18.104 -518.809,-123.217c-182.938,78.36 -390.983,158.517 -584.009,101.021c-160.179,-47.711 -272.404,-195.182 -259.682,-341.233c9.199,-105.618 83.287,-203.28 186.527,-259.381c-104.351,36.712 -195.423,102.054 -250.835,186.745c-66.428,101.534 -79.132,229.41 -27.698,337.252c70.609,148.046 253.772,242.396 438.569,253.411c184.796,11.008 367.903,-51.551 517.605,-145.87c138.995,115.813 329.674,164.313 519.644,134.666c189.97,-29.639 360.204,-141.833 443.595,-292.347c90.636,40.063 164.73,84.478 265.444,97.291c162.869,20.714 336.51,-19.184 460.547,-112.753c124.029,-93.578 193.762,-240.615 173.135,-381.809Z"/>
         </g>
 
-        <!-- Orbit chips (six packages) -->
-        <g font-family="'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace"
-           font-size="10" letter-spacing="0.18em" font-weight="600" text-anchor="middle"
-           fill="#80b1dc">
-            <g transform="translate(-30 -185)">
-                <use href="#chip"/>
-                <text y="4">MAIL</text>
-            </g>
-            <g transform="translate(195 -100)">
-                <use href="#chip"/>
-                <text y="4" fill="#5ec4a0">CALENDAR</text>
-            </g>
-            <g transform="translate(215 65)">
-                <use href="#chip"/>
-                <text y="4" fill="#c78de0">CONTACTS</text>
-            </g>
-            <g transform="translate(60 185)">
-                <use href="#chip"/>
-                <text y="4" fill="#e0a84d">DRIVE</text>
-            </g>
-            <g transform="translate(-175 145)">
-                <use href="#chip"/>
-                <text y="4" fill="#6db0e0">TEXT</text>
-            </g>
-            <g transform="translate(-225 -50)">
-                <use href="#chip"/>
-                <text y="4" fill="#5ec48a">CALC</text>
-            </g>
+        <!-- Chip: MAIL -->
+        <g transform="translate(-30 -185)">
+            <rect x="-34" y="-14" width="68" height="28" rx="14" fill="#152233" stroke="#2a4565" stroke-width="1"/>
+            <text x="0" y="4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+                  font-size="10" letter-spacing="2" font-weight="700" text-anchor="middle" fill="#80b1dc">MAIL</text>
         </g>
 
-        <!-- Tiny orbit hints (dashed arcs) -->
-        <g fill="none" stroke="#1e3450" stroke-width="1" stroke-dasharray="2 6" opacity="0.55">
-            <ellipse cx="0" cy="0" rx="225" ry="190"/>
-            <ellipse cx="0" cy="0" rx="170" ry="140"/>
+        <!-- Chip: CALENDAR -->
+        <g transform="translate(195 -100)">
+            <rect x="-44" y="-14" width="88" height="28" rx="14" fill="#152233" stroke="#2a4565" stroke-width="1"/>
+            <text x="0" y="4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+                  font-size="10" letter-spacing="2" font-weight="700" text-anchor="middle" fill="#5ec4a0">CALENDAR</text>
+        </g>
+
+        <!-- Chip: CONTACTS -->
+        <g transform="translate(215 65)">
+            <rect x="-44" y="-14" width="88" height="28" rx="14" fill="#152233" stroke="#2a4565" stroke-width="1"/>
+            <text x="0" y="4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+                  font-size="10" letter-spacing="2" font-weight="700" text-anchor="middle" fill="#c78de0">CONTACTS</text>
+        </g>
+
+        <!-- Chip: DRIVE -->
+        <g transform="translate(60 185)">
+            <rect x="-34" y="-14" width="68" height="28" rx="14" fill="#152233" stroke="#2a4565" stroke-width="1"/>
+            <text x="0" y="4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+                  font-size="10" letter-spacing="2" font-weight="700" text-anchor="middle" fill="#e0a84d">DRIVE</text>
+        </g>
+
+        <!-- Chip: TEXT -->
+        <g transform="translate(-175 145)">
+            <rect x="-30" y="-14" width="60" height="28" rx="14" fill="#152233" stroke="#2a4565" stroke-width="1"/>
+            <text x="0" y="4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+                  font-size="10" letter-spacing="2" font-weight="700" text-anchor="middle" fill="#6db0e0">TEXT</text>
+        </g>
+
+        <!-- Chip: CALC -->
+        <g transform="translate(-225 -50)">
+            <rect x="-30" y="-14" width="60" height="28" rx="14" fill="#152233" stroke="#2a4565" stroke-width="1"/>
+            <text x="0" y="4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+                  font-size="10" letter-spacing="2" font-weight="700" text-anchor="middle" fill="#5ec48a">CALC</text>
         </g>
     </g>
 </svg>
